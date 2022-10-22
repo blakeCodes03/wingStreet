@@ -1,0 +1,553 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;           
+}
+h1{ 
+    font-size: 3rem; 
+    font-weight: 600;
+    color: #08090A;
+    padding: 1em 0;
+}
+section{
+    padding: 5em 2em;
+    margin-top: 6rem;
+}
+
+/* /navbar */
+nav{
+    font-family:  'Roboto Slab', serif;
+    background-color: #fefefe;
+    position: sticky;
+    position: -webkit-sticky; /*safari*/ 
+    top: 0;
+    width: 100%;  
+    z-index: 10;      
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+
+}
+.flex-container-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;    
+}
+.nav-container-1{
+    width: 15em;
+    flex: 0 1 auto;
+    align-self: auto;
+    
+}
+.nav-container-2{    
+    flex: 0 1 auto;
+    align-self: auto;
+}
+.nav-container-3{
+    display: none;
+}
+.nav-container-4{
+    flex: 0 1 auto;
+    align-self: auto;
+    position: absolute;
+    right: 1em;
+    display: none;
+    
+}
+.phone-icon{
+    width: 2em;
+    padding: 7% 15%;
+    display: inline-block;
+    overflow: hidden;    
+}
+.bounce2 { /*added class using JS to animate phone icon*/ 
+    animation: bounce2 2s ease 1;
+  }
+  @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-20px);}
+      60% {transform: translateY(-10px);}
+  }
+nav ul{      
+    width: 100%;
+    background-color: #fefefe;    
+}
+nav li{
+    display: inline-block;
+    margin: 0 48px;
+    line-height: 96px;
+}
+nav a{
+    color: #08090A;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+nav a:hover{
+    text-decoration: 2px underline solid #E3E36A;
+    transition:  0.3s ;
+}
+.logo{
+    width: 100%;    
+    height: 8em; /*remove when you get original logo*/    
+}
+/* hamburger menu toggle animation */
+#nav-icon4 {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    margin-left: 1.5em ;    
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    display: none;
+}  
+  #nav-icon4 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 60%;
+    background: #08090A;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}  
+  #nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}  
+  #nav-icon4 span:nth-child(2) {
+  top: 7px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  }  
+  #nav-icon4 span:nth-child(3) {
+  top: 14px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}  
+  #nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -2px;
+  left: 6px;
+}  
+  #nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}  
+  #nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 15px;
+  left: 6px;
+}
+/* /hamburger menu toggle animation */
+/* end of navbar */
+
+.flex-container-one{ /* beginning of flex-container-2 */
+    display: flex;
+    background-color: #fefefe;
+    width: 100%;    
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 3.5rem;
+    
+}
+.flex-container-one-1{ /*flex container containing random quotes paragragh*/
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin-right: auto; 
+    margin-left: 16rem;
+    margin-bottom: -4rem;
+}
+.flex-container-one p{ /* random quote styles */
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    text-align: center;     
+}
+.flex-container-one-2 { /*flex container that contains box with wings image*/
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    margin-right: auto; 
+    margin-left: 2rem;  
+    padding: 2em 2em; 
+}
+.flex-container-one-2 img{  /* box containing wings image*/ 
+   display: inline-block;  
+   margin-left: 3rem;
+   margin-right: auto;
+   width: 100%;  
+  
+}
+.flex-container-one-3{   /* flex container that contains animated button */ 
+    width: 30%;    
+    align-content: center;
+   margin-left: 25rem; 
+   margin-top: -15rem;  
+}
+.button-5 { /* call to action button*/
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #ff211b;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;  
+  font-size: 16px;
+  font-weight: 600;
+  word-spacing: 3px;
+  letter-spacing: 1.2px;
+  justify-content: center;
+  line-height: 1.25;
+  margin: auto;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);  
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: black;
+  color: #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #ff211b;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+.button-5 span{
+    margin-left: 1rem;
+} /* end of button animation */
+#products h1{
+    margin-bottom: -2rem;
+}
+.grid-slide-container{ /* grid container containing slider & opening hours(displays slider beside opening hrs side x side on larger screens) */ 
+    
+    display: grid;
+    grid-gap: 5em;
+    background-color: #fefefe;  
+    color: #454d66;
+    grid-template-columns: repeat(2, 1fr); /* action to display menu grid in 2 columns on large screens*/  
+    padding: 4em 1em;
+}  
+.swiper { /* slideshow of different products */
+    width: 100%;    
+    margin-left: auto;
+    margin-right: auto;   
+}
+.swiper img{   
+   width: 100%;
+   height: auto;
+}
+.swiper-pagination-bullet-active{
+    background-color: #ff211b !important;
+}
+.swiper-button-prev  {
+    color:#ff211b !important;    
+}
+.swiper-button-next {
+    color:#ff211b !important;
+}
+
+.store-opening-hrs-div{ /* div containing store opening hours paragragh*/
+    text-align: center;       
+    font-size: 2rem;
+    font-weight: 800;  
+    position: relative; 
+}
+.store-opening-hrs-div div{
+    position: absolute;
+    top: 50%;
+}
+.grid-container-menu{ /*grid container to control display of menu on smaller screens*/
+    display: grid;
+    grid-gap: 2em;
+    background-color: #fefefe;  
+    color: #454d66;
+    grid-template-columns: repeat(3, 1fr); /* action to display menu grid in 3 columns on large screens*/       
+}
+.wings-menu-container{ /*div containing menu(wings) content*/   
+    border-radius: 50px;
+    background: linear-gradient(145deg, #e5e5e5, #ffffff);
+    box-shadow:  18px 18px 34px #e7e7e7,
+                -18px -18px 34px #ffffff;
+    align-self: center;
+    justify-self: center; 
+    padding: 2em 1em;              
+} 
+.wings-accessories-container{ /* div containing menu(others asides wings)*/       
+    border-radius: 50px;
+    background: linear-gradient(145deg, #e5e5e5, #ffffff);
+    box-shadow:  18px 18px 34px #e7e7e7,
+                -18px -18px 34px #ffffff;
+    align-self: center;
+    justify-self: center; 
+    padding: 2em 1em;      
+}
+.grid-container-menu table{ /* table containing menu*/            
+    border-spacing:1em 0.5em; 
+    table-layout: fixed;        
+}  
+td{ /* table cells styling (I used tables to  construct menu)*/
+    overflow: hidden;
+    width: 5em;
+} 
+.menu-table-header{ /* section title of menu inside table*/
+    font-size: 2rem;
+    color: #08090A;
+}
+.name-of-packs{ /*to make the names of packs/pricing inside table*/
+    font-weight: 600;
+}
+/* footer section */
+footer{
+    background-color:#ff211b ;  
+    color: #fefefe;
+   
+}
+.footer-grid-container{ /* grid container containing footer to display content on 1 row on larger screens) */ 
+    margin-top: 4rem;
+    display: grid;
+    grid-gap: 2em;    
+    grid-template-columns: repeat(3, 1fr); /* action to display menu grid in 2 columns on large screens*/  
+    padding: 4em 1em;
+} 
+.footer-grid-container div{ 
+    display: flex; /* action to center content within divs in the footer */ 
+    align-items: center;
+    justify-content: center;
+} 
+.footer-grid-container div p span{
+   padding: 0.5em; /* padding to space social media icons in footer */ 
+} 
+.footer-grid-container a{
+    color: #fefefe;
+}
+small{
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
+   
+}
+.copyright{
+    display: flex; /* action to center content within divs in the footer */ 
+    align-items: center;
+    justify-content: center; 
+}
+.rights{ /* wingstreet copyright */
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1279px) { /*media queries for smaller screens(tablets/phones)*/
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+        color: #08090A;
+        /* padding: 0.2em 1em; */
+    }
+    /* navbar media queries */
+    .nav-container-1{
+        width: 15em;
+        order: -1;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    .nav-container-2{        
+        order: 3;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    .nav-container-3{        
+        order: -2;
+        display: block;
+        flex: 0 1 auto;
+        align-self: auto;
+    }
+    .nav-container-4{
+        display: block;
+    }
+    .far-right{   /*code to take hamburger to the right of screen onclick*/  
+        order: 0;
+        position: absolute;
+        right: 1em;
+        z-index: 10;        
+    }
+    img.logo{
+        width: 80%;
+        height: 5em; /*remove when you get original logo*/         
+    }    
+    nav #nav-icon4{
+        display: block;
+    }
+    #nav-icon4 span { /* /controls thickness of hamburger */
+        height: 3px;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fefefe;
+        top: 0;
+        left: -100%;
+        text-align: start;
+        transition: all .0s;
+        z-index: 10; 
+        overflow-x: hidden;
+        
+       
+    }
+    nav li{
+        display: block;
+        line-height: 80px;
+    }
+    nav a{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    nav ul.show{
+        left: 0;  
+        position: absolute;             
+    }
+    nav ul.active{
+        display: none;
+    } /* /navbar media queries end */
+    
+    /*flex containers directly below navbar*/
+    .flex-container-one{
+        margin-top: 2rem;
+    }
+    .flex-container-one-1{ /*flex container containing random quotes */         
+        margin: 0 !important;
+        padding: 1em 2em !important;
+        
+    }    
+    .flex-container-one-2 { /*flex container that contains box with wings image*/       
+        margin-right: 10rem !important; 
+        padding: 0;     
+    }    
+    .flex-container-one-3{   /* flex container that contains animated button */ 
+        width: 80%;    
+        align-content: center;
+        margin: auto;          
+    }  
+    .grid-slide-container{ /*  action to display slider/opening hrs grid in 2 columns on medium screens */ 
+        grid-template-columns: 1fr; 
+        margin-top: 0;
+    }  
+    .store-opening-hrs-div{ /* div containing store opening hours paragragh*/       
+        /* margin-top: 4rem; */
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .grid-container-menu{ /* action to display menu grid in 1 column on small screens*/
+        grid-template-columns: 1fr;        
+    }
+    .footer-grid-container{ /* action to display footer content in 1 column on small screens */
+        grid-template-columns: 1fr;
+        padding: 1em 0em;
+    }
+    .footer-grid-container div{ 
+        display: block;
+        padding: 0 3em;
+    } 
+
+    
+    
+}
+@media only screen and (min-width: 900px) and (max-width:1279px) { /*media queries for ONLY medium screen sizes*/
+    .grid-container-menu{ /* action to display menu grid in 2 columns on medium screens*/
+        grid-template-columns: 1fr 1fr;        
+    }
+    .grid-slide-container{ /* action to display slider/opening hrs grid in 2 columns on medium screens*/ 
+        grid-template-columns: 1fr 1fr; 
+    }  
+    .store-opening-hrs-div{ /* div containing store opening hours paragragh*/       
+       text-align: center;
+    }
+    .footer-grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 3em 1em;
+    }
+    
+   
+    
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WingStreet</title> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="wings.css">
+    
+    
+</head>
+<body>
+    <nav id="navbar">         
+        <div class="flex-container-nav"> <!--  flex div to control display of navbar-->
+            <div class="nav-container-1"> <!--  div containing logo -->
+                <label><img class="logo" src="images/wingStreet_logo.png.png" alt="wingStreet logo"></label>
+            </div>
+            <div class="nav-container-2"> <!--  div containing menu elements -->
+                <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#products">OUR PRODUCTS</a></li>
+                <li><a href="#menu">PRICING</a></li>            
+                <li><a href="#footer">FEEDBACK</a></li>
+                </ul>
+            </div>
+            <div class="nav-container-3"> <!--  div containing animated hamburger menu for small screens -->
+                <div id="nav-icon4">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>                   
+            </div>
+            <div class="nav-container-4"> <!--  div containing phone icon for small screens -->                
+                <a href="tel:+2348100652471"> <img  class="phone-icon " src="images/icons8-phone-50.png" alt="phone icon"></a>                
+            </div>            
+        </div>   
+        
+    </nav>
+    
+    <div id="home" class="flex-container-one"> <!--  flex div containing content after navbar  -->
+        <div class="flex-container-one-1"><p> got Wings?</p></div> <!--  flex div containing random quotes  -->
+        <div class="flex-container-one-2"> <img src="images/IMG_1206-removebg-preview.png" alt="box with chicken wings"></div> <!--  flex div containing img bof ox with wings  -->
+        <div class="flex-container-one-3">
+            <a href="#menu"><button class="button-5" role="button">MENU <span class="material-symbols-outlined">arrow_forward </span></button></a>
+        </div>      
+    </div>
+
+    <section id="products"> <!-- Section containing slider for slideshow and opening hours in grid display -->
+        <h1> PRODUCTS</h1>
+        <div  class="grid-slide-container">
+                <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/IMG-20220929-WA0007.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/IMG-20220929-WA0009.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/IMG-20220929-WA0004.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/IMG-20220929-WA0003.jpg" alt=""></div>                
+                <div class="swiper-slide"><img src="images/IMG-20220929-WA0008.jpg" alt=""></div>
+                
+                ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="store-opening-hrs-div"> <!-- div containing delivery hours  -->
+                <div>
+                    <p>STORE OPENING HOURS</p> 
+                <span>In-store (8:00 am - 7:00 pm) | Delivery (8:00 am - 5:00 pm)</span>
+                </div>                
+            </div>      
+        </div>
+        
+    </section>
+    
+   
+    <section id="menu">
+        <h1>MENU</h1>
+        <div class="grid-container-menu"> <!-- grid container containing menu -->
+            <div class="wings-menu-container"> <!-- div containing Wings menu  -->           
+               <table>
+                <tr>
+                    <td class="menu-table-header" rowspan="4">Wings</td> <!--  -->
+                </tr>
+                <tr></tr> <tr></tr> <tr></tr> <tr></tr> <!-- to make wings header visually seperated from the content  -->             
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Rookie Pack</td>                                
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td>6 wings, 1 flavor</td>             
+                </tr>
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Rookie Pack</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td>6 wings, 1 flavor</td>             
+                </tr>
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Rookie Pack</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td>6 wings, 1 flavor</td>             
+                </tr>
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Rookie Pack</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td>6 wings, 1 flavor</td>             
+                </tr>
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Rookie Pack</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td>6 wings, 1 flavor</td>             
+                </tr>
+               </table>            
+            </div>
+    
+            <div class="wings-accessories-container"> <!-- div containing sides options on menu -->            
+                <table>
+                <tr>
+                    <td class="menu-table-header" rowspan="4">Sides</td> <!--  -->
+                </tr>
+                <tr></tr> <tr></tr> <tr></tr> <tr></tr> <!-- to make wings header visually seperated from the content  -->             
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Jollof Rice</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>1,000</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                     <td class="name-of-packs">Fried Rice</td>                                  
+                    <td class="name-of-packs"><span>&#8358</span>1,000</td>            
+                </tr>            
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">French Fries</td>                                
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>            
+                </tr>           
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Potato Wedges</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>            
+                </tr>                   
+               </table>            
+           </div>
+            <div class="wings-accessories-container"> <!-- div containing wraps options on menu -->            
+                <table>
+                <tr>
+                    <td class="menu-table-header" rowspan="4">Wraps</td> <!--  -->
+                </tr>
+                <tr></tr> <tr></tr> <tr></tr> <tr></tr> <!-- to make wings header visually seperated from the content  -->             
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Chicken Shawarma Wrap</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>1,800</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Chicken & Bacon Wrap</td>                                  
+                    <td class="name-of-packs"><span>&#8358</span>2,000</td>            
+                </tr>            
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Breakfast Wrap</td>                                
+                    <td class="name-of-packs"><span>&#8358</span>2,000</td>            
+                </tr>           
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Bell Chicken Wrap</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>2,000</td>            
+                </tr>                     
+                </table>            
+            </div>
+            <div class="wings-accessories-container"> <!-- div containing salads options on menu -->            
+                <table>
+                <tr>
+                    <td class="menu-table-header" rowspan="4">Salads</td> <!--  -->
+                </tr>
+                <tr></tr> <tr></tr> <tr></tr> <tr></tr> <!-- to make wings header visually seperated from the content  -->             
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Grilled Chicken Salad</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>1,500</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Coleslaw</td>                                  
+                    <td class="name-of-packs"><span>&#8358</span>300</td>            
+                </tr>            
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Pastaslaw</td>                                
+                    <td class="name-of-packs"><span>&#8358</span>300</td>            
+                </tr>             
+                </table>            
+            </div>
+            <div class="wings-accessories-container"> <!-- div containing drinks options on menu -->            
+                <table>
+                <tr>
+                    <td class="menu-table-header" rowspan="4">Drinks</td> <!--  -->
+                </tr>
+                <tr></tr> <tr></tr> <tr></tr> <tr></tr> <!-- to make wings header visually seperated from the content  -->             
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">6-Pack Budweiser®</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Water</td>                                  
+                    <td class="name-of-packs"><span>&#8358</span>250</td>            
+                </tr>            
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Soft Drinks</td>                                
+                    <td class="name-of-packs"><span>&#8358</span>350</td>            
+                </tr>           
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Beer</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>600</td>            
+                </tr>                      
+                </table>            
+            </div>
+            <div class="wings-accessories-container"> <!-- div containing milkshakes options on menu -->            
+                <table>
+                <tr>
+                    <td class="menu-table-header" rowspan="4">Milkshakes</td> <!--  -->
+                </tr>
+                <tr></tr> <tr></tr> <tr></tr> <tr></tr> <!-- to make wings header visually seperated from the content  -->             
+                <tr> <!-- name of pack and prices row-->
+                    <td class="name-of-packs">Oreo Shake</td>                                 
+                    <td class="name-of-packs"><span>&#8358</span>3,000</td>
+                </tr>
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Vanilla Shake</td>                                  
+                    <td class="name-of-packs"><span>&#8358</span>1,000</td>            
+                </tr>            
+                <tr> <!-- quantity/flavor row -->
+                    <td class="name-of-packs">Malted Shake</td>                                
+                    <td class="name-of-packs"><span>&#8358</span>2,500</td>            
+                </tr>                
+                </table>            
+            </div>           
+        </div>
+    </section>
+
+    
+        
+    <footer id="footer">
+        <div class="footer-grid-container">                  
+            <div>
+                <small><b>CALL US</b>
+                    <p>+2348100652471</p>
+                </small>
+            </div>
+            <div>
+                <small><span><i class="fa fa-envelope"></i></span> wingstreetfoods@gmail.com</small>
+            </div>
+            <div>
+                <p>
+                    <a href="#"><span><i class="fa fa-facebook"></i></span> </a>                        
+                    <a href="#"><span><i class="fa fa-twitter"></i></span> </a>
+                    <a href="#"><span><i class="fa fa-instagram"></i></span> </a>
+                </p>                       
+            </div>                      
+        </div>
+        <div class="copyright">
+            <small class="rights"><span>&#169;</span> 2022 All Rights Reserved wingStreet.</small>
+        </div> 
+    </footer>
+      
+    
+    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+ <script src="wings.js"></script>   
+</body>
+</html>
